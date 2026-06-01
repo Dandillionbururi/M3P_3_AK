@@ -13,11 +13,11 @@ def calfp(frates, fac_rate):
 
     # Weight Factors
     wt_factors = [
-        [3, 4, 6],
-        [4, 5, 7],
-        [3, 4, 6],
-        [7, 10, 15],
-        [5, 7, 10]
+        [1, 4, 6],
+        [0, 0, 6],
+        [3, 1, 0],
+        [4, 2, 2],
+        [1, 0, 0]
     ]
 
     ufp = 0
@@ -68,13 +68,13 @@ def calfp(frates, fac_rate):
 # Driver function / Główna część programu
 if __name__ == "__main__":
     frates = [
-        [0, 50, 0],
-        [0, 40, 0],
-        [0, 35, 0],
-        [0, 6, 0],
-        [0, 4, 0]
+        [0, 1, 0],
+        [0, 1, 0],
+        [0, 3, 0],
+        [0, 1, 0],
+        [0, 3, 0]
     ]
 
-    fac_rate = 3
+    fac_rate = 2
 
     calfp(frates, fac_rate)
